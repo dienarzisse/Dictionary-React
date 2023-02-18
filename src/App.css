@@ -1,38 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 1.5rem;
+  font-family: 'Inconsolata';
+  color: #2D2D2D;
+}
+
+.Dark{
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sans{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.serif{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mono{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Tablet version */
+@media screen and (min-width: 768px){
+  .App{
+    max-width: 43.0625rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Desktop version */
+@media screen and (min-width: 1440px){
+  .App{
+    max-width: 46.0625rem;
   }
 }

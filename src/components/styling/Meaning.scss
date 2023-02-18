@@ -1,0 +1,83 @@
+@import "./variables";
+
+.Meaning{
+    margin-bottom: 2.125rem;
+    .partOfSpeach{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.125rem;
+        span{
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 1.1875rem;
+        }
+        hr{
+            width: 100%;
+            margin-left: 1.5625rem;
+            background-color: #E9E9E9;
+            border: 1px solid transparent;
+        }
+    }
+    .def{
+        span{
+            font-family: 'Inconsolata';
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.0625rem;
+        }
+        ul{
+            margin-top: 1rem;
+            list-style: none; /* Remove default bullets */
+            li{
+                margin-bottom: 0.8125rem;
+                span{
+                    font-family: inherit;
+                    font-weight: 400;
+                    font-size: 0.9375rem;
+                    line-height: 1.5rem;
+                }
+                .example{
+                    display: block;
+                    margin-top: 0.875rem;
+                    margin-left: 0.75rem;
+                    color: #757575;
+                }
+            }
+
+             // purple bullets
+            li::before {
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: $purple; /* Change the color */
+                vertical-align: middle;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold; /* If you want it to be bold */
+                font-size: 1.25rem;
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 1rem; /* Also needed for space (tweak if needed) */
+            }
+        }
+    }
+    .synonyms, .antonyms{
+        margin-top: 1.5rem;
+        span{
+            font-family: 'Lora';
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: #757575;
+            margin-right: 2.4375rem;
+        }
+        p{
+            display: inline;
+            font-family: 'Inconsolata';
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.0625rem;
+            color: $purple;
+        }
+    }
+}

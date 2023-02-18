@@ -1,0 +1,59 @@
+
+.Source{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+    hr{
+        width: 100%;
+        border: 0;
+        height: 1px;
+        background-color: #979797;
+        margin-bottom: 1.625rem;
+        margin-top: calc(1.625rem - 2.125rem);
+        
+    }
+    span{
+        font-family: 'Inconsolata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        text-decoration-line: underline;
+        color: #979797;
+        margin-bottom: 0.5719rem;
+    }
+    a{
+        font-family: 'Inconsolata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 0.5rem;
+    }
+    .link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    a:hover{
+        color: #A445ED;
+    }
+}
+
+// tablet and desktop
+
+@media screen and (min-width: 768px) {
+    .source-link{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.3125rem;
+    }
+}

@@ -1,0 +1,35 @@
+.SearchedWord {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.125rem;
+}
+.SearchedWord .word {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5625rem;
+}
+.SearchedWord .word h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.125rem;
+}
+.SearchedWord .word span {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #A445ED;
+}
+.SearchedWord .pronunciacion {
+  width: 3rem;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.SearchedWord .pronunciacion:active {
+  opacity: 0.5;
+}/*# sourceMappingURL=SearchedWord.css.map */

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+.Meaning {
+  margin-bottom: 2.125rem;
+}
+.Meaning .partOfSpeach {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.125rem;
+}
+.Meaning .partOfSpeach span {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.1875rem;
+}
+.Meaning .partOfSpeach hr {
+  width: 100%;
+  margin-left: 1.5625rem;
+  background-color: #E9E9E9;
+  border: 1px solid transparent;
+}
+.Meaning .def span {
+  font-family: "Inconsolata";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.0625rem;
+}
+.Meaning .def ul {
+  margin-top: 1rem;
+  list-style: none; /* Remove default bullets */
+}
+.Meaning .def ul li {
+  margin-bottom: 0.8125rem;
+}
+.Meaning .def ul li span {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+.Meaning .def ul li .example {
+  display: block;
+  margin-top: 0.875rem;
+  margin-left: 0.75rem;
+  color: #757575;
+}
+.Meaning .def ul li::before {
+  content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #A445ED; /* Change the color */
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 1.25rem;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1rem; /* Also needed for space (tweak if needed) */
+}
+.Meaning .synonyms, .Meaning .antonyms {
+  margin-top: 1.5rem;
+}
+.Meaning .synonyms span, .Meaning .antonyms span {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #757575;
+  margin-right: 2.4375rem;
+}
+.Meaning .synonyms p, .Meaning .antonyms p {
+  display: inline;
+  font-family: "Inconsolata";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.0625rem;
+  color: #A445ED;
+}/*# sourceMappingURL=Meaning.css.map */

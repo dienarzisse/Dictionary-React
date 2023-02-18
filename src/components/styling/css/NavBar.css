@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.NavBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0rem;
+}
+.NavBar img {
+  height: 2rem;
+}
+.NavBar .settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.NavBar .settings .dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 4.5rem;
+  height: 1.5rem;
+}
+.NavBar .settings .dropdown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  background: transparent;
+  padding: 0 1rem 0 0;
+  color: #2D2D2D;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+.NavBar .settings .dropdown select option {
+  background-color: white;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+.NavBar .settings .dropdown select .sans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.NavBar .settings .dropdown select .serif {
+  font-family: "Times New Roman", Times, serif;
+}
+.NavBar .settings .dropdown select .mono {
+  font-family: "Courier New", Courier, monospace;
+}
+.NavBar .settings .dropdown select::-ms-expand {
+  display: none;
+}
+.NavBar .settings .dropdown .selectDark {
+  color: white;
+}
+.NavBar .settings .dropdown .selectDark option {
+  color: #2D2D2D;
+}
+.NavBar .settings .dropdown::after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.85rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.NavBar .settings .dropdown:hover::after {
+  color: #A445ED;
+}
+.NavBar .settings .separator {
+  width: 0.0625rem;
+  height: 2rem;
+  background-color: #E9E9E9;
+  margin: 0 1rem;
+}
+.NavBar .settings .theme-design .switch {
+  width: 2.5rem;
+  height: 1.25rem;
+  position: relative;
+  display: inline-block;
+}
+.NavBar .settings .theme-design .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.NavBar .settings .theme-design .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #757575;
+  transition: 0.4s;
+}
+.NavBar .settings .theme-design .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 0.875rem;
+  width: 0.875rem;
+  left: 0.1875rem;
+  bottom: 0.1875rem;
+  background-color: white;
+  transition: 0.4s;
+}
+.NavBar .settings .theme-design .switch input:checked + .slider {
+  background-color: #A445ED;
+}
+.NavBar .settings .theme-design .switch input:focus + .slider {
+  box-shadow: 0 0 1px #A445ED;
+}
+.NavBar .settings .theme-design .switch input:checked + .slider:before {
+  transform: translateX(1.3125rem);
+}
+.NavBar .settings .theme-design .switch .slider.round {
+  border-radius: 2.125rem;
+}
+.NavBar .settings .theme-design .switch .slider.round:before {
+  border-radius: 50%;
+}
+.NavBar .settings .theme-design img {
+  height: 1.25rem;
+  margin-left: 0.75rem;
+}
+
+.MoonIconDark {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(28%) saturate(4753%) hue-rotate(256deg) brightness(95%) contrast(95%);
+}
+
+.MoonIcon {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(0%) saturate(1205%) hue-rotate(197deg) brightness(94%) contrast(87%);
+}/*# sourceMappingURL=NavBar.css.map */
